@@ -3,205 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Community Hosting Program</title>
-  <meta name="description" content="Community Hosting Program – Free web hosting for developers, students, and creators. Limited-time initiative." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>16K LinkedIn Celebration – Free Hosting</title>
+  <meta name="description" content="16K LinkedIn followers celebration by Shailesh Singh – Get 4 months FREE Web & WordPress hosting with full control." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --primary: #2563eb;
-      --dark: #0f172a;
-      --gray: #475569;
-      --light: #f8fafc;
-      --border: #e2e8f0;
+    :root{
+      --primary:#2563eb;
+      --secondary:#1e40af;
+      --dark:#020617;
+      --gray:#475569;
+      --light:#f8fafc;
+      --border:#e2e8f0;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+    body{background:var(--light);color:#0f172a;}
+
+    /* HERO */
+    .hero{
+      background:radial-gradient(circle at top,#1e293b 0%,#020617 70%);
+      color:white;
+      padding:90px 20px 140px;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:radial-gradient(#334155 1px, transparent 1px);
+      background-size:26px 26px;
+      opacity:.4;
+    }
+    .hero-content{position:relative;z-index:2;}
+    .badge{
+      display:inline-block;
+      background:linear-gradient(135deg,#2563eb,#38bdf8);
+      padding:8px 18px;
+      border-radius:999px;
+      font-size:.85rem;
+      font-weight:600;
+      margin-bottom:18px;
+    }
+    .hero h1{font-size:2.7rem;font-weight:800;margin-bottom:14px;}
+    .hero p{max-width:720px;margin:auto;font-size:1.1rem;color:#cbd5f5;}
+
+    .profile{
+      width:150px;height:150px;
+      border-radius:50%;
+      border:6px solid var(--dark);
+      object-fit:cover;
+      position:absolute;
+      left:50%;
+      bottom:-75px;
+      transform:translateX(-50%);
+      background:white;
+      z-index:3;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
+    section{padding:100px 20px;}
+    .container{max-width:1150px;margin:auto;}
+    h2{text-align:center;font-size:2.1rem;margin-bottom:18px;}
+    .sub{text-align:center;color:var(--gray);max-width:720px;margin:0 auto 55px;}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;}
+    .card{
+      background:white;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:34px 26px;
+      text-align:center;
+      transition:.35s ease;
+    }
+    .card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.1);}
+    .card h3{margin-bottom:10px;font-size:1.1rem;}
+    .card p{font-size:.95rem;color:var(--gray);}
+
+    .offer{
+      background:linear-gradient(135deg,#eef2ff,#f8fafc);
+      border-radius:24px;
+      padding:60px 40px;
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+    .offer h2{text-align:left;}
+    .offer ul{list-style:none;margin-top:18px;}
+    .offer li{margin-bottom:14px;font-weight:500;}
+
+    .cta{
+      background:linear-gradient(135deg,#1e40af,#2563eb);
+      color:white;
+      text-align:center;
+      padding:90px 20px;
+      border-radius:26px;
+    }
+    .cta a{
+      display:inline-block;
+      margin-top:26px;
+      background:white;
+      color:var(--primary);
+      padding:16px 42px;
+      border-radius:12px;
+      font-weight:700;
+      text-decoration:none;
     }
 
-    body {
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
+    footer{
+      background:#020617;
+      color:#cbd5f5;
+      text-align:center;
+      padding:34px 20px;
+      font-size:.9rem;
     }
 
-    header {
-      background: linear-gradient(135deg, #1e40af, #2563eb);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: auto;
-      opacity: 0.95;
-    }
-
-    .cta {
-      margin-top: 32px;
-    }
-
-    .cta a {
-      background: white;
-      color: var(--primary);
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s ease;
-    }
-
-    .cta a:hover {
-      background: #e0e7ff;
-    }
-
-    section {
-      padding: 70px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      transition: 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-    }
-
-    h2 {
-      font-size: 1.9rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    h3 {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-
-    ul {
-      padding-left: 18px;
-      color: var(--gray);
-    }
-
-    footer {
-      background: #020617;
-      color: #cbd5f5;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #e0e7ff;
-      color: #1e40af;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin-bottom: 12px;
+    @media(max-width:900px){
+      .offer{grid-template-columns:1fr;}
+      .hero h1{font-size:2.2rem;}
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="badge">Limited Community Initiative</div>
-    <h1>Community Hosting Program</h1>
-    <p>Free, secure web hosting for developers, students, and creators who want to build real projects without worrying about infrastructure costs.</p>
-    <div class="cta">
-      <a href="#apply">Apply Now</a>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="badge">🎉 16,000 LinkedIn Followers Celebration</div>
+      <h1>4 Months FREE Web & WordPress Hosting</h1>
+      <p>Thank you for the love & support! To celebrate 16K connections on LinkedIn, I’m giving back to the community with free, full-control hosting.</p>
     </div>
-  </header>
+    <img src="photo2.jpg" alt="Shailesh Singh" class="profile" />
+  </div>
 
+  <!-- FEATURES -->
   <section>
     <div class="container">
-      <h2>Who Is This For?</h2>
+      <h2>What You’ll Get</h2>
+      <p class="sub">Professional hosting access — not limited trials or demo plans.</p>
       <div class="grid">
-        <div class="card"><h3>Students</h3><p>Practice real-world development and host your learning projects.</p></div>
-        <div class="card"><h3>Developers</h3><p>Showcase portfolios, demos, and experiments.</p></div>
-        <div class="card"><h3>Startups</h3><p>Test MVPs and ideas without upfront hosting cost.</p></div>
-        <div class="card"><h3>Creators</h3><p>Host blogs, landing pages, and tools.</p></div>
+        <div class="card"><h3>Full Control Access</h3><p>Complete control over your website environment.</p></div>
+        <div class="card"><h3>File Manager</h3><p>Upload, edit, and manage files easily.</p></div>
+        <div class="card"><h3>WordPress Hosting</h3><p>Run WordPress smoothly with full flexibility.</p></div>
+        <div class="card"><h3>Database Access</h3><p>Create & manage MySQL databases.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- DOMAIN -->
   <section style="background:#f1f5f9;">
     <div class="container">
-      <h2>What You Get</h2>
-      <div class="grid">
-        <div class="card">✔ Free hosting (up to 4 months)</div>
-        <div class="card">✔ Dedicated subdomain</div>
-        <div class="card">✔ FTP access</div>
-        <div class="card">✔ SSL (HTTPS)</div>
-        <div class="card">✔ Fair usage limits</div>
-        <div class="card">✔ Manual review & support</div>
+      <div class="offer">
+        <div>
+          <h2>Domain & Subdomain Policy</h2>
+          <ul>
+            <li>✔ You must bring your own domain name</li>
+            <li>✔ FREE subdomain for IGNTU students</li>
+            <li>✔ Root domain: <b>ratemymate.in</b></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Hosting Duration</h2>
+          <p>🎁 <b>4 Months Completely FREE</b><br>Limited seats · Manual approval · Fair usage policy</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- CTA -->
   <section>
     <div class="container">
-      <h2>Rules & Fair Usage</h2>
-      <div class="grid">
-        <div class="card">
-          <ul>
-            <li>No spam, phishing, or illegal content</li>
-            <li>No adult or gambling websites</li>
-            <li>Excessive usage may lead to suspension</li>
-            <li>Database access only on request</li>
-          </ul>
-        </div>
-        <div class="card">
-          <ul>
-            <li>No email hosting included</li>
-            <li>No full control panel access</li>
-            <li>Subdomain-based hosting only</li>
-            <li>Violation leads to termination</li>
-          </ul>
-        </div>
+      <div class="cta">
+        <h2>Apply for Free Hosting</h2>
+        <p>Let’s build something meaningful together 🚀</p>
+        <a href="https://forms.google.com">Apply Now</a>
       </div>
-    </div>
-  </section>
-
-  <section id="apply" style="background:#e0e7ff;">
-    <div class="container" style="text-align:center;">
-      <h2>Apply for the Program</h2>
-      <p style="max-width:600px;margin:0 auto 24px;">Applications are reviewed manually to ensure quality and fair usage. Selected users will receive access details via email.</p>
-      <a href="https://forms.google.com" class="cta" style="display:inline-block;">Apply via Google Form</a>
     </div>
   </section>
 
   <footer>
-    <p>Managed by Shailesh Singh · Community Hosting Program</p>
-    <p>© 2026 All rights reserved</p>
+    <p>Managed by Shailesh Singh · RoboBird IT Solution</p>
+    <p>© 2026 · 16K LinkedIn Community Hosting Program</p>
   </footer>
 
 </body>
